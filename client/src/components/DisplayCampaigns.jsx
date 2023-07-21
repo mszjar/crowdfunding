@@ -13,7 +13,23 @@ const DisplayCampaigns = ({ title, isLoading, campaigns }) => {
 
   return (
     <div>
-      <h1 className="font-epilogue font-semibold text-[18px] text-black text-left">
+      <div className="flex h-[624px] py-24 px-10 object-fill">
+        <div className="md:w-1/4 text-black">
+          <p className="font-bold text-sm uppercase">Services</p>
+          <p className="text-3xl font-bold">Multimedia products</p>
+          <p className="text-2xl mb-10 leading-none">
+            Atractive designs for your brand
+          </p>
+          <a
+            href="#"
+            className="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800"
+          >
+            Contact us
+          </a>
+        </div>
+        <div className="md:w-3/4 bg-cover bg-right   bg-[url('./assets/backimage.jpg')]" />
+      </div>
+      <h1 className="font-epilogue font-semibold text-[18px] text-black text-left pt-10">
         {title} ({campaigns.length})
       </h1>
 
