@@ -32,6 +32,9 @@ const SubNavbar = () => {
         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
           ART DE LA SCÈNE
         </a>
+        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+            MODE / DESIGN
+        </a>
       </nav>
     </header>
   );

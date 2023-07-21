@@ -34,7 +34,7 @@ const FundCard = ({
             className="w-[17px] h-[17px] object-contain"
           />
           <p className="ml-[12px] mt-[2px] font-epilogue font-medium text-[12px] text-[#808191]">
-            Education
+            Projet artistique
           </p>
         </div>
 
@@ -53,7 +53,7 @@ const FundCard = ({
               {amountCollected}
             </h4>
             <p className="mt-[3px] font-epilogue font-normal text-[12px] leading-[18px] text-[#808191] sm:max-w-[120px] truncate">
-              Raised of {target}
+              Collecté sur {target}
             </p>
           </div>
           <div className="flex flex-col">
@@ -61,7 +61,7 @@ const FundCard = ({
               {remainingDays}
             </h4>
             <p className="mt-[3px] font-epilogue font-normal text-[12px] leading-[18px] text-[#808191] sm:max-w-[120px] truncate">
-              Days Left
+              Jours restants
             </p>
           </div>
         </div>
@@ -75,7 +75,7 @@ const FundCard = ({
             />
           </div>
           <p className="flex-1 font-epilogue font-normal text-[12px] text-[#808191] truncate">
-            by <span className="text-[#b2b3bd]">{owner}</span>
+            par <span className="text-[#b2b3bd]">{owner}</span>
           </p>
         </div>
       </div>
