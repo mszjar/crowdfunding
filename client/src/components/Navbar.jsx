@@ -21,7 +21,7 @@ const Navbar = () => {
           className="flex w-full font-epilogue font-normal text-[14px] placeholder:text-[#4b5264] text-white bg-transparent outline-none"
         />
 
-        <div className="w-[72px] h-full rounded-[20px] bg-[#4acd8d] flex justify-center items-center cursor-pointer">
+        <div className="w-[72px] h-full rounded-[20px] bg-[#83B4FF] flex justify-center items-center cursor-pointer">
           <img
             src={search}
             alt="search"
@@ -34,7 +34,7 @@ const Navbar = () => {
         <CustomButton
           btnType="button"
           title="Marketplace"
-          styles={address ? "bg-[#1dc071]" : "bg-[#8c6dfd]"}
+          styles={address ? "bg-[#83B4FF]" : "bg-[#8c6dfd]"}
           handleClick={() => {
             alert("Le markeplace sera disponible bientôt");
           }}
@@ -42,7 +42,7 @@ const Navbar = () => {
         <CustomButton
           btnType="button"
           title="Notre Concept"
-          styles={address ? "bg-[#1dc071]" : "bg-[#8c6dfd]"}
+          styles={address ? "bg-[#83B4FF]" : "bg-[#8c6dfd]"}
           handleClick={() => {
             navigate("notre-concept");
           }}
@@ -50,7 +50,7 @@ const Navbar = () => {
         <CustomButton
           btnType="button"
           title={address ? "Lancer mon projet" : "Connect"}
-          styles={address ? "bg-[#1dc071]" : "bg-[#8c6dfd]"}
+          styles={address ? "bg-[#83B4FF]" : "bg-[#8c6dfd]"}
           handleClick={() => {
             if (address) navigate("create-campaign");
             else connect();
@@ -112,7 +112,7 @@ const Navbar = () => {
                 />
                 <p
                   className={`ml-[20px] font-epilogue font-semibold text-[14px] ${
-                    isActive === link.name ? "text-[#1dc071]" : "text-[#808191]"
+                    isActive === link.name ? "text-[#83B4FF]" : "text-[#808191]"
                   }`}
                 >
                   {link.name}
@@ -125,7 +125,7 @@ const Navbar = () => {
             <CustomButton
               btnType="button"
               title={address ? "Lancer mon projet" : "Connect"}
-              styles={address ? "bg-[#1dc071]" : "bg-[#8c6dfd]"}
+              styles={address ? "bg-[#83B4FF]" : "bg-[#8c6dfd]"}
               handleClick={() => {
                 if (address) navigate("create-campaign");
                 else connect();
