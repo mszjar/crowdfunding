@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import FundCard from "./FundCard";
 import { loader } from "../assets";
+import { CustomButton } from "./";
+
 
 const DisplayCampaigns = ({ title, isLoading, campaigns }) => {
   const navigate = useNavigate();
@@ -15,17 +17,21 @@ const DisplayCampaigns = ({ title, isLoading, campaigns }) => {
     <div>
       <div className="flex h-[624px] py-24 px-10 object-fill">
         <div className="md:w-1/4 text-black">
-          <p className="font-bold text-sm uppercase">Services</p>
-          <p className="text-3xl font-bold">Multimedia products</p>
+          <p className="font-bold text-sm uppercase">Crowdfunding</p>
+          <p className="text-3xl font-bold">Artistryfund</p>
           <p className="text-2xl mb-10 leading-none">
-            Atractive designs for your brand
+          Investissez dans ce que vous aimez !
           </p>
-          <a
-            href="#"
-            className="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800"
-          >
-            Contact us
-          </a>
+          <div className="flex mx-4">
+              <CustomButton
+              btnType="button"
+              title="Notre Concept"
+              styles={"bg-[#8c6dfd]"}
+              handleClick={() => {
+                navigate("notre-concept");
+              }}
+            />
+          </div>
         </div>
         <div className="md:w-3/4 bg-cover bg-right   bg-[url('./assets/backimage.jpg')]" />
       </div>
